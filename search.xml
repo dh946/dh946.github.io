@@ -17,19 +17,6 @@
     
     
     <entry>
-      <title>hexo-theme-melody v1.5 supports iframe &amp; slides</title>
-      <link href="/2018/03/07/iframetest/"/>
-      <url>/2018/03/07/iframetest/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>slide page test</title>
       <link href="/2018/03/07/slidetest/"/>
       <url>/2018/03/07/slidetest/</url>
@@ -43,6 +30,19 @@
             <tag> hexo </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo-theme-melody v1.5 supports iframe &amp; slides</title>
+      <link href="/2018/03/07/iframetest/"/>
+      <url>/2018/03/07/iframetest/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+      
+      
       
     </entry>
     
