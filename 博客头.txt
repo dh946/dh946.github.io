@@ -1,0 +1,40 @@
+标签外挂
+note(提示标签)
+{% note default %}
+default 提示塊標籤
+{% endnote %}
+{% note primary no-icon %}
+primary 
+{% note success %}
+success 
+{% note info %}
+info 
+{% note warning %}
+warning 
+{% note danger %}
+danger 
+
+
+
+按钮隐藏文字
+門裏站着一個人? {% hideInline 閃 %}
+
+block隐藏块
+{% hideBlock display,bg,color %}
+content
+{% endhideBlock %}
+
+hidetoggle隐藏大块
+{% hideToggle Butterfly安裝方法 %}
+在
+{% endhideToggle %}
+
+多标签tabs
+{% tabs test %}
+<!-- tab -->
+**This is Tab 1.**
+<!-- endtab -->
+{% endtabs %}
+
+
+
