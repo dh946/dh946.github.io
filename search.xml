@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>【三分钟讲清楚】LCD和OLED都是什么？</title>
+      <link href="/2020/10/27/LCD&amp;&amp;OLED/"/>
+      <url>/2020/10/27/LCD&amp;&amp;OLED/</url>
+      
+        <content type="html"><![CDATA[<h1 id="【三分钟讲清楚】LCD和OLED都是什么？"><a href="#【三分钟讲清楚】LCD和OLED都是什么？" class="headerlink" title="【三分钟讲清楚】LCD和OLED都是什么？"></a>【三分钟讲清楚】LCD和OLED都是什么？</h1><p>阅读本系列文章注意事项：</p><p>本文主要面向小白，因此文章描述可能与实际情况有较大出入，意在用简单语言描述大概。<br>三分钟为实验室理论峰值速度，如果你觉得不止需要三分钟，你可以试试读快点<img src= "/img/loading.gif" data-lazy-src="http://static.coolapk.com/emoticons/v9/coolapk_emotion_65_coshuaji.png" alt="cos滑稽">。</p><p>大家对LCD和OLED应该并不陌生，但是大多数人的印象中貌似只知道OLED比LCD高端，今天用3分钟带点击了解一下，LCD和OLED都是什么，以及解答关于它们常见的问题。</p><h2 id="认识LCD与OLED"><a href="#认识LCD与OLED" class="headerlink" title="认识LCD与OLED"></a>认识LCD与OLED</h2><p>想要认识我们屏幕，首先要知道屏幕是什么组成的，让我们先把屏幕放大，看看里面有什么。</p><p>什么是像素？</p><p><img src= "/img/loading.gif" data-lazy-src="https://gitee.com/liuhui946/pic1/raw/master/lyf/1412049_c003d8aa_9237_2137@646x646.jpeg.m.jpg" alt="img"></p><p>（此段可以通过凑近观察家里的电视机来帮助理解）当我们放大屏幕，会发现画面是一个一个小方格组成，无数不同颜色的小方格组成了我们看到的画面。我们把这个小方格叫做像素。</p><p><img src= "/img/loading.gif" data-lazy-src="https://gitee.com/liuhui946/pic1/raw/master/lyf/1412049_c26d731b_9237_2139@800x800.jpeg.m.jpg" alt="img"></p><p>如果我们再放大像素，会发现每个像素都是 红（R），绿（G），蓝（B）） 三种颜色组成，这三种颜色我们不陌生，在小学美术课本上，就有介绍了这三种颜色，叫三原色，原因是这三种颜色按不同比例混合在一起，可以混合出所有的颜色。 具体RGB混合成色原理，网上有非常多的视频可以了解。</p><p><img src= "/img/loading.gif" data-lazy-src="https://gitee.com/liuhui946/pic1/raw/master/lyf/1412049_b99d2f45_9237_2141@671x654.jpeg.m.jpg" alt="img"></p><p>屏幕都是由RGB组成，那么屏幕的区分，应该也在RGB上，让我们切开一个像素，看看LCD和OLED的不同。</p><p><img src= "/img/loading.gif" data-lazy-src="https://gitee.com/liuhui946/pic1/raw/master/lyf/1412049_7319acb0_9237_2143@800x800.jpeg.m.jpg" alt="img"></p><p>切开后，OLED 屏幕的结构十分简单，就是红绿蓝三种颜色的有机发光材料，在通电后发出光，通电越低就越暗，直到没有电就不发光，如果一个像素没有红光，没有绿光，没有蓝光，什么光都没有，就是黑色。<br>而LCD屏幕就复杂了一点，总共分3层，我们先从最下面一层——背光层开始了解。</p><p><img src= "/img/loading.gif" data-lazy-src="https://gitee.com/liuhui946/pic1/raw/master/lyf/1412049_39df7404_9237_2145@800x800.jpeg.m.jpg" alt="img"></p><p>LCD背光层主要由一块导光板组成，下面有一排灯珠，可以发出白光，而导光板可以把来自下方的光线，均匀地反射向屏幕正面，光线就这样来到上面两层。</p><p><img src= "/img/loading.gif" data-lazy-src="https://gitee.com/liuhui946/pic1/raw/master/lyf/1412049_830205b4_9237_2147@800x800.jpeg.m.jpg" alt="img"></p><p>光线来到上两层后，先到了液晶层，液晶的特性在高中物理中有介绍，这里我们可以简单看做一个门。<br>门全开，光线就可以全部通过液晶层（如上图的R），门关小一点，光线就暗一点（如上图的G），门全关上，光线就被挡在液晶后面（如上图的B）。</p><p>这样我们就可以通过控制每个RGB下面的液晶“门”打开幅度大小，控制红绿蓝三种颜色光线比例了。 这样我们就了解了LCD和OLED最基本的原理。</p><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><p>1.为什么LCD屏幕没有万象息屏（熄屏显示）？</p><p>根据上面的知识我们知道，LCD屏幕显示画面是背光层打出白光，白光从没有关闭的液晶门中透过来，当LCD做万象息屏，显示黑色的地方，只是液晶门全部关上了，光线被挡住，但是整个背光层还是亮着，其实也就是屏幕还是开着，这样一直开着屏幕，估计半天就得没电。<br>而OLED不一样，不发光的像素就是没有通电，开启万象息屏后，只有时钟区域在用电发光，黑色部分不发光，也不需要电，耗电量就在一个极低的范围里。</p><p><img src= "/img/loading.gif" data-lazy-src="https://gitee.com/liuhui946/pic1/raw/master/lyf/1412049_12399714_9237_2149@800x800.jpeg.m.jpg" alt="img"></p><p>2.为什么LCD打孔屏的摄像头上有阴影？</p><p>刚刚看过背光层，就知道屏幕看上去整个在发光，是因为导光板，导光板把光线均匀的反射出来。但是实际光线是在下面（就在手机下巴里）打上来，打孔屏的摄像头会穿过背光层，刚好挡住了从下往上的光，所以摄像头的阴影才会在上方，这个阴影就是摄像头的影子。</p><p><img src= "/img/loading.gif" data-lazy-src="https://gitee.com/liuhui946/pic1/raw/master/lyf/1412049_3ac62c65_9237_2151@800x800.jpeg.m.jpg" alt="img"></p><p>3.为什么LCD屏幕有拖影？</p><p>因为LCD是光线通过液晶层显示画面的，画面改变的时候，屏幕上就有无数个像素点需要改变颜色，而LCD改变颜色就要调整RGB对应液晶层的“门”。<br>关门，开门，都是液晶转动，转到合上，门就关。LCD看到的拖影就是门在开关的过程。而且液晶转动的速度在温度越低的时候，腿脚越不利索，转动越慢，拖影就越明显。<br>这个是硬件原因，不能通过系统解决，毕竟LCD真的做不到OLED 屏幕那样 啪！一下 关掉</p><p><img src= "/img/loading.gif" data-lazy-src="https://gitee.com/liuhui946/pic1/raw/master/lyf/1412049_711180de_9237_2154@800x800.jpeg.m.jpg" alt="img"></p><p>4.为什么OLED会烧屏？</p><p>烧屏并不是真的屏幕烧了，让我们回忆最开头OLED的组成——有机发光材料，本来有机材料就不如LCD的无机材料耐用，而且OLED还是给有机材料通电让材料直接接受高压电发光，让这个本就不富裕的家庭，雪上加霜。</p><p>当屏幕一直在显示固定的画面时（比如下图的某音加号），这里的有机材料消耗就比其他地方快，有机材料被消耗后亮度会下降，之后在白色画面一看，就有一个印。<br>如果是彩色图案，蓝色的地方把蓝色发光材料消耗了，剩下红色和绿色，就有一个黄色有印子，其他颜色以此类推，都会“烧”出一个相反的颜色。<br>所以OLED 屏幕烧屏本质是发光材料不耐用，不过现在的AMOLED屏幕，寿命基本可以支持2年，如果在1年内，正常使用还出现烧屏，可以去售后保修换屏</p><p><img src= "/img/loading.gif" data-lazy-src="https://gitee.com/liuhui946/pic1/raw/master/lyf/1412049_90ca2053_9240_7264@800x800.jpeg.m.jpg" alt="img"></p><p>5.为什么OLED 屏幕不清晰？</p><p>刚刚就有说到，OLED 屏幕的有机材料不耐用，其中红色和蓝色 比 绿色 要更不耐用。</p><p>工程师想到的解决方法是，把RGB，变成RG和BG，每个像素的R（红色子像素）和B（蓝色子像素）变大一倍，就可以保证红色蓝色和绿色保持一样耐用。<br>这样子显示时，RG需要跟右边的BG借一个B，才能凑一个RGB，BG也是跟右边借一个R。</p><p>看下图虚线框，虽然是同样大小，LCD屏幕可以有2个完整RGB，OLED 屏幕只有1个完整RGB。 OLED 屏幕的Pentile排列大概就是如此，大概就损失了接近一半的清晰度。<br>目前三星的钻石排列和国产华星光电（小米10至尊纪念版使用）的珍珠排列，可以做到只损失20%左右的清晰度，但是还是比不上LCD的无损。</p><p><img src= "/img/loading.gif" data-lazy-src="https://gitee.com/liuhui946/pic1/raw/master/lyf/1412049_e0d56afa_9240_7266@800x800.jpeg.m.jpg" alt="img"></p><p><img src= "/img/loading.gif" data-lazy-src="http://static.coolapk.com/emoticons/v9/coolapk_emotion_57_dogehechi.png" alt="doge呵斥"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 故事 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于郑州我知道的不多</title>
       <link href="/2020/10/21/%E5%85%B3%E4%BA%8E%E9%83%91%E5%B7%9E%E6%88%91%E7%9F%A5%E9%81%93%E7%9A%84%E4%B8%8D%E5%A4%9A/"/>
       <url>/2020/10/21/%E5%85%B3%E4%BA%8E%E9%83%91%E5%B7%9E%E6%88%91%E7%9F%A5%E9%81%93%E7%9A%84%E4%B8%8D%E5%A4%9A/</url>
