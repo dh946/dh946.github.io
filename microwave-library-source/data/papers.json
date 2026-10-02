@@ -1,0 +1,1070 @@
+{
+  "schemaVersion": 2,
+  "updatedAt": "2026-10-02",
+  "rankingRule": "At the selected offset, lower dBc/Hz values rank higher. Raw and author-reported 10 GHz-normalized data are never mixed.",
+  "papers": [
+    {
+      "id": "cheng-2025-spiral-resonator-pmo",
+      "title": "Spiral resonator referenced on-chip low noise microwave generation",
+      "authors": "Cheng et al.",
+      "year": 2025,
+      "tags": [
+        "OFD",
+        "eOFD",
+        "Integrated",
+        "SiN",
+        "TFLN",
+        "Dual-laser"
+      ],
+      "sourceFile": "Cheng 等 - 2025 - Spiral resonator referenced on-chip low noise microwave generation.pdf",
+      "status": "verified",
+      "note": "Values are reported for the 37.3 GHz carrier and explicitly scaled by the authors to 10 GHz.",
+      "measurements": [
+        {
+          "label": "37.3 GHz output",
+          "basis": "raw",
+          "carrierGHz": 37.3,
+          "points": [
+            {
+              "offsetHz": 10,
+              "value": -58
+            },
+            {
+              "offsetHz": 10000,
+              "value": -133
+            }
+          ],
+          "evidence": "Results/conclusion text"
+        },
+        {
+          "label": "Author-scaled 10 GHz equivalent",
+          "basis": "normalized_10ghz",
+          "carrierGHz": 10,
+          "points": [
+            {
+              "offsetHz": 10,
+              "value": -69
+            },
+            {
+              "offsetHz": 10000,
+              "value": -144
+            }
+          ],
+          "evidence": "Authors scale 37.3 GHz by 20log10(37.3/10)"
+        }
+      ],
+      "category": "OFD"
+    },
+    {
+      "id": "egbert-2025-brillouin-eofd",
+      "title": "Dual-wavelength Brillouin lasers as compact opto-terahertz references for low-noise microwave synthesis",
+      "authors": "Egbert et al.",
+      "year": 2025,
+      "tags": [
+        "Brillouin",
+        "eOFD",
+        "Dual-wavelength",
+        "Microwave synthesis"
+      ],
+      "sourceFile": "Egbert 等 - 2025 - Dual-wavelength Brillouin lasers as compact opto-terahertz references for low-noise microwave synthe.pdf",
+      "status": "verified",
+      "note": "The 300 GHz optical difference reference is divided to a 10 GHz microwave output.",
+      "measurements": [
+        {
+          "label": "10 GHz synthesized output",
+          "basis": "raw",
+          "carrierGHz": 10,
+          "points": [
+            {
+              "offsetHz": 1000,
+              "value": -130
+            },
+            {
+              "offsetHz": 10000,
+              "value": -150
+            },
+            {
+              "offsetHz": 10000000,
+              "value": -170
+            }
+          ],
+          "evidence": "Abstract and results text"
+        }
+      ],
+      "category": "OFD"
+    },
+    {
+      "id": "egbert-2026-kerr-ofd-300ghz",
+      "title": "Attosecond-timing millimeter waves via Kerr optical frequency division",
+      "authors": "Egbert et al.",
+      "year": 2026,
+      "tags": [
+        "OFD",
+        "Kerr microcomb",
+        "Brillouin",
+        "mmWave",
+        "Integrated"
+      ],
+      "sourceFile": "Egbert 等 - 2026 - Attosecond-timing millimeter waves via Kerr optical frequency division.pdf",
+      "status": "verified",
+      "note": "Preprint. Values refer to the 300 GHz output; RMS timing jitter is reported as 135 as from 1 kHz to 1 MHz.",
+      "measurements": [
+        {
+          "label": "300 GHz Kerr-OFD output",
+          "basis": "raw",
+          "carrierGHz": 300,
+          "points": [
+            {
+              "offsetHz": 10000,
+              "value": -135
+            },
+            {
+              "offsetHz": 1000000,
+              "value": -152
+            }
+          ],
+          "evidence": "Abstract and main results text"
+        }
+      ],
+      "category": "OFD"
+    },
+    {
+      "id": "fortier-2011-ultrastable-ofd",
+      "title": "Generation of ultrastable microwaves via optical frequency division",
+      "authors": "Fortier et al.",
+      "year": 2011,
+      "tags": [
+        "OFD",
+        "Frequency comb",
+        "Ultra-stable laser",
+        "Bulk"
+      ],
+      "sourceFile": "Fortier 等。 - 2011 - Generation of ultrastable microwaves via optical f.pdf",
+      "status": "verified",
+      "note": "OCR drops minus signs in places; values were interpreted from the article text as -104 and -157 dBc/Hz.",
+      "measurements": [
+        {
+          "label": "10 GHz output",
+          "basis": "raw",
+          "carrierGHz": 10,
+          "points": [
+            {
+              "offsetHz": 1,
+              "value": -104
+            },
+            {
+              "offsetHz": 1000000,
+              "value": -157
+            }
+          ],
+          "evidence": "Opening results paragraph"
+        },
+        {
+          "id": "manual-raw-10",
+          "label": "手动补录 · 10 GHz 输出",
+          "basis": "raw",
+          "carrierGHz": 10,
+          "points": [
+            {
+              "offsetHz": 1000,
+              "value": -145,
+              "manual": true,
+              "updatedAt": "2026-10-02T13:34:38.610Z"
+            },
+            {
+              "offsetHz": 10000,
+              "value": -156,
+              "manual": true,
+              "updatedAt": "2026-10-02T13:35:40.683Z"
+            }
+          ],
+          "evidence": "manual-local-entry",
+          "manual": true
+        }
+      ],
+      "category": "OFD",
+      "lastManualEditAt": "2026-10-02T13:35:40.684Z"
+    },
+    {
+      "id": "groman-2024-mmwave-cavity",
+      "title": "Photonic millimeter-wave generation beyond the cavity thermal limit",
+      "authors": "Groman et al.",
+      "year": 2024,
+      "tags": [
+        "Dual-laser",
+        "Cavity",
+        "Photonic heterodyne",
+        "mmWave",
+        "Integrated"
+      ],
+      "sourceFile": "Groman 等 - 2024 - Photonic millimeter-wave generation beyond the cavity thermal limit.pdf",
+      "status": "verified",
+      "note": "Direct heterodyne output from two cavity-locked lasers.",
+      "measurements": [
+        {
+          "label": "118.1 GHz output",
+          "basis": "raw",
+          "carrierGHz": 118.1,
+          "points": [
+            {
+              "offsetHz": 10000,
+              "value": -118
+            },
+            {
+              "offsetHz": 30000,
+              "value": -120
+            }
+          ],
+          "evidence": "Abstract and results text"
+        }
+      ],
+      "category": "OPTICAL_HETERODYNE"
+    },
+    {
+      "id": "he-2024-chip-eofd",
+      "title": "Chip-scale high-performance photonic microwave oscillator",
+      "authors": "He et al.",
+      "year": 2024,
+      "tags": [
+        "OFD",
+        "eOFD",
+        "Integrated",
+        "SiN",
+        "TFLN",
+        "Dual-laser"
+      ],
+      "sourceFile": "He 等 - 2024 - Chip-scale high-performance photonic microwave oscillator.pdf",
+      "status": "verified",
+      "note": "The article reports the 37.7 GHz measurement and an explicit 10 GHz-equivalent curve.",
+      "measurements": [
+        {
+          "label": "37.7 GHz output",
+          "basis": "raw",
+          "carrierGHz": 37.7,
+          "points": [
+            {
+              "offsetHz": 10000,
+              "value": -129
+            },
+            {
+              "offsetHz": 50000,
+              "value": -136
+            }
+          ],
+          "evidence": "Oscillator noise performance section"
+        },
+        {
+          "label": "Author-scaled 10 GHz equivalent",
+          "basis": "normalized_10ghz",
+          "carrierGHz": 10,
+          "points": [
+            {
+              "offsetHz": 10000,
+              "value": -141
+            },
+            {
+              "offsetHz": 50000,
+              "value": -148
+            }
+          ],
+          "evidence": "Authors scale 37.7 GHz by 20log10(37.7/10)"
+        }
+      ],
+      "category": "OFD"
+    },
+    {
+      "id": "he-2025-two-color",
+      "title": "Highly coherent two-color laser and its application for low-noise microwave generation",
+      "authors": "He et al.",
+      "year": 2025,
+      "tags": [
+        "OFD",
+        "Two-color laser",
+        "Cavity",
+        "eOFD"
+      ],
+      "sourceFile": "He 等 - 2025 - Highly coherent two-color laser and its application for low-noise microwave generation.pdf",
+      "status": "verified",
+      "note": "A 0.5 THz two-color reference is down-converted to 25 GHz for characterization and microwave generation.",
+      "measurements": [
+        {
+          "label": "25 GHz down-converted output",
+          "basis": "raw",
+          "carrierGHz": 25,
+          "points": [
+            {
+              "offsetHz": 1,
+              "value": -74
+            },
+            {
+              "offsetHz": 100,
+              "value": -120
+            }
+          ],
+          "evidence": "Main text summary of the 25 GHz signal"
+        },
+        {
+          "id": "manual-raw-25",
+          "label": "手动补录 · 25 GHz 输出",
+          "basis": "raw",
+          "carrierGHz": 25,
+          "points": [
+            {
+              "offsetHz": 1000,
+              "value": -133,
+              "manual": true,
+              "updatedAt": "2026-10-02T13:39:10.153Z"
+            },
+            {
+              "offsetHz": 10000,
+              "value": -133,
+              "manual": true,
+              "updatedAt": "2026-10-02T13:38:24.887Z"
+            }
+          ],
+          "evidence": "manual-local-entry",
+          "manual": true
+        }
+      ],
+      "category": "OFD",
+      "lastManualEditAt": "2026-10-02T13:39:10.153Z"
+    },
+    {
+      "id": "ji-2025-dispersive-wave-ofd",
+      "title": "Dispersive-wave-agile optical frequency division",
+      "authors": "Ji et al.",
+      "year": 2025,
+      "tags": [
+        "OFD",
+        "Kerr microcomb",
+        "Dispersive wave",
+        "Integrated",
+        "Tunable"
+      ],
+      "sourceFile": "Ji 等 - 2025 - Dispersive-wave-agile optical frequency division.pdf",
+      "status": "verified",
+      "note": "The text explicitly gives phase noise scaled from a near-20 GHz signal to a 10 GHz carrier.",
+      "measurements": [
+        {
+          "label": "Author-scaled 10 GHz equivalent",
+          "basis": "normalized_10ghz",
+          "carrierGHz": 10,
+          "points": [
+            {
+              "offsetHz": 100,
+              "value": -101
+            },
+            {
+              "offsetHz": 1000,
+              "value": -133
+            },
+            {
+              "offsetHz": 10000,
+              "value": -152
+            }
+          ],
+          "evidence": "Main text states values when scaled to 10 GHz"
+        }
+      ],
+      "category": "OFD"
+    },
+    {
+      "id": "jin-2025-microresonator-ofd",
+      "title": "Microresonator-referenced soliton microcombs with zeptosecond-level timing noise",
+      "authors": "Jin et al.",
+      "year": 2025,
+      "tags": [
+        "OFD",
+        "Kerr microcomb",
+        "Microresonator",
+        "Integrated"
+      ],
+      "sourceFile": "Jin 等 - 2025 - Microresonator-referenced soliton microcombs with zeptosecond-level timing noise.pdf",
+      "status": "verified",
+      "note": "The stabilized soliton repetition frequency is near 25 GHz.",
+      "measurements": [
+        {
+          "label": "~25 GHz stabilized repetition rate",
+          "basis": "raw",
+          "carrierGHz": 25,
+          "points": [
+            {
+              "offsetHz": 10,
+              "value": -85
+            },
+            {
+              "offsetHz": 10000,
+              "value": -141
+            }
+          ],
+          "evidence": "Phase-noise comparison in main text"
+        }
+      ],
+      "category": "OFD"
+    },
+    {
+      "id": "kudelin-2024-tunable-synthesizer",
+      "title": "An optoelectronic microwave synthesizer with frequency tunability and low phase noise",
+      "authors": "Kudelin et al.",
+      "year": 2024,
+      "tags": [
+        "OFD",
+        "2P-OFD",
+        "Tunable",
+        "DDS",
+        "Synthesizer"
+      ],
+      "sourceFile": "Kudelin 等 - 2024 - An optoelectronic microwave synthesizer with frequency tunability and low phase noise.pdf",
+      "status": "verified",
+      "note": "Primary rank value is the fixed 10 GHz OFD signal. The tunable output is -150 dBc/Hz at 10 kHz over 9.5-10.5 GHz.",
+      "measurements": [
+        {
+          "label": "10 GHz OFD reference output",
+          "basis": "raw",
+          "carrierGHz": 10,
+          "points": [
+            {
+              "offsetHz": 10000,
+              "value": -156
+            }
+          ],
+          "evidence": "Abstract and results text"
+        },
+        {
+          "label": "9.5-10.5 GHz tunable output",
+          "basis": "raw",
+          "carrierGHz": "9.5-10.5",
+          "points": [
+            {
+              "offsetHz": 10000,
+              "value": -150
+            }
+          ],
+          "evidence": "Tuning-range summary"
+        }
+      ],
+      "category": "OFD"
+    },
+    {
+      "id": "kudelin-2024-chip-pmo",
+      "title": "Photonic chip-based low-noise microwave oscillator",
+      "authors": "Kudelin et al.",
+      "year": 2024,
+      "tags": [
+        "OFD",
+        "Kerr microcomb",
+        "Integrated",
+        "Chip-scale"
+      ],
+      "sourceFile": "Kudelin 等 - 2024 - Photonic chip-based low-noise microwave oscillator.pdf",
+      "status": "verified",
+      "note": "The paper gives both measured 20 GHz values and values scaled to 10 GHz.",
+      "measurements": [
+        {
+          "label": "20 GHz output",
+          "basis": "raw",
+          "carrierGHz": 20,
+          "points": [
+            {
+              "offsetHz": 100,
+              "value": -96
+            },
+            {
+              "offsetHz": 10000,
+              "value": -135
+            }
+          ],
+          "evidence": "Abstract"
+        },
+        {
+          "label": "Author-scaled 10 GHz equivalent",
+          "basis": "normalized_10ghz",
+          "carrierGHz": 10,
+          "points": [
+            {
+              "offsetHz": 100,
+              "value": -102
+            },
+            {
+              "offsetHz": 10000,
+              "value": -141
+            }
+          ],
+          "evidence": "Main text after subtracting 6 dB"
+        }
+      ],
+      "category": "OFD"
+    },
+    {
+      "id": "li-vahala-2023-x-ka",
+      "title": "Small-sized, ultra-low phase noise photonic microwave oscillators at X-Ka bands",
+      "authors": "Li and Vahala",
+      "year": 2023,
+      "tags": [
+        "eOFD",
+        "Tunable",
+        "X-band",
+        "Ka-band",
+        "Dual-laser"
+      ],
+      "sourceFile": "Li_Vahala_2023_Small-sized, ultra-low phase noise photonic microwave oscillators at X-Ka bands.pdf",
+      "status": "verified",
+      "note": "The paper demonstrates multiple carrier frequencies. Confirmed output-specific values are kept as separate rank rows.",
+      "measurements": [
+        {
+          "label": "10 GHz output",
+          "basis": "raw",
+          "carrierGHz": 10,
+          "points": [
+            {
+              "offsetHz": 10000,
+              "value": -154
+            },
+            {
+              "offsetHz": 100000,
+              "value": -160
+            }
+          ],
+          "evidence": "Opening results text"
+        },
+        {
+          "label": "40 GHz output",
+          "basis": "raw",
+          "carrierGHz": 40,
+          "points": [
+            {
+              "offsetHz": 1000,
+              "value": -135
+            },
+            {
+              "offsetHz": 10000,
+              "value": -153
+            },
+            {
+              "offsetHz": 100000,
+              "value": -153
+            }
+          ],
+          "evidence": "40 GHz results text"
+        }
+      ],
+      "category": "OFD"
+    },
+    {
+      "id": "liu-2024-air-gap-cavity",
+      "title": "Low-noise microwave generation with an air-gap optical reference cavity",
+      "authors": "Liu et al.",
+      "year": 2024,
+      "tags": [
+        "OFD",
+        "Air-gap cavity",
+        "Mode-locked laser",
+        "Optical reference"
+      ],
+      "sourceFile": "Liu 等 - 2024 - Low-noise microwave generation with an air-gap optical reference cavity.pdf",
+      "status": "verified",
+      "note": "Only measured values are ranked; the paper's projected sub--160 dBc/Hz capability is excluded.",
+      "measurements": [
+        {
+          "label": "10 GHz output",
+          "basis": "raw",
+          "carrierGHz": 10,
+          "points": [
+            {
+              "offsetHz": 100,
+              "value": -95
+            },
+            {
+              "offsetHz": 10000,
+              "value": -142
+            }
+          ],
+          "evidence": "Abstract and measurement results"
+        }
+      ],
+      "category": "OFD"
+    },
+    {
+      "id": "liu-2024-coeo",
+      "title": "Ultralow-phase-noise and broadband frequency-hopping coupled optoelectronic oscillator under quiet point operation",
+      "authors": "Liu et al.",
+      "year": 2024,
+      "tags": [
+        "OEO",
+        "COEO",
+        "Tunable",
+        "Frequency hopping",
+        "Quiet point"
+      ],
+      "sourceFile": "Liu 等 - 2024 - Ultralow-phase-noise and broadband frequency-hopping coupled optoelectronic oscillator under quiet p.pdf",
+      "status": "verified",
+      "note": "Best quiet-point result. Across 2-18 GHz the paper reports typical values from -131 to -142 dBc/Hz at 10 kHz.",
+      "measurements": [
+        {
+          "label": "2-18 GHz quiet-point best",
+          "basis": "raw",
+          "carrierGHz": "2-18",
+          "points": [
+            {
+              "offsetHz": 10000,
+              "value": -140.2
+            }
+          ],
+          "evidence": "Quiet-point characterization"
+        },
+        {
+          "id": "manual-raw-10",
+          "label": "手动补录 · 10 GHz 输出",
+          "basis": "raw",
+          "carrierGHz": 10,
+          "points": [
+            {
+              "offsetHz": 10000,
+              "value": -140,
+              "manual": true,
+              "updatedAt": "2026-10-02T13:04:36.742Z"
+            }
+          ],
+          "evidence": "manual-local-entry",
+          "manual": true
+        }
+      ],
+      "category": "OEO_COEO",
+      "lastManualEditAt": "2026-10-02T13:04:36.742Z"
+    },
+    {
+      "id": "loh-2024-brillouin-dfd",
+      "title": "Ultralow noise microwave synthesis via difference frequency division of a Brillouin resonator",
+      "authors": "Loh et al.",
+      "year": 2024,
+      "tags": [
+        "OFD",
+        "Brillouin",
+        "Difference-frequency division",
+        "Fiber resonator"
+      ],
+      "sourceFile": "Loh 等 - 2024 - Ultralow noise microwave synthesis via difference frequency division of a Brillouin resonator.pdf",
+      "status": "verified",
+      "note": "Two SBS lasers from a common resonator provide a 30 THz difference reference divided to 10 GHz.",
+      "measurements": [
+        {
+          "label": "10 GHz output",
+          "basis": "raw",
+          "carrierGHz": 10,
+          "points": [
+            {
+              "offsetHz": 10,
+              "value": -95
+            },
+            {
+              "offsetHz": 100,
+              "value": -110
+            }
+          ],
+          "evidence": "Abstract"
+        }
+      ],
+      "category": "OFD"
+    },
+    {
+      "id": "matsko-2009-coeo-theory",
+      "title": "Theory of coupled optoelectronic microwave oscillator I: expectation values",
+      "authors": "Matsko et al.",
+      "year": 2009,
+      "tags": [
+        "OEO",
+        "COEO",
+        "Theory"
+      ],
+      "sourceFile": "Matsko 等 - 2009 - Theory of coupled optoelectronic microwave oscillator I expectation values.pdf",
+      "status": "verified_no_metric",
+      "note": "Theory paper. It does not report a phase-noise curve for the paper's own experimental source, so it remains unranked.",
+      "measurements": [],
+      "category": "OEO_COEO"
+    },
+    {
+      "id": "nakamura-2026-feed-forward",
+      "title": "Low-noise microwaves from free-running frequency combs and electrical feed-forward phase noise compensation",
+      "authors": "Nakamura et al.",
+      "year": 2026,
+      "tags": [
+        "OFD",
+        "2P-OFD",
+        "Feed-forward",
+        "Frequency comb",
+        "Kerr microcomb"
+      ],
+      "sourceFile": "Nakamura 等 - 2026 - Low-noise microwaves from free-running frequency combs and electrical feed-forward phase noise compe.pdf",
+      "status": "verified",
+      "note": "Raw 10 GHz mode-locked-laser result and the microcomb result scaled by the authors to 10 GHz are separate.",
+      "measurements": [
+        {
+          "label": "10 GHz mode-locked-laser output",
+          "basis": "raw",
+          "carrierGHz": 10,
+          "points": [
+            {
+              "offsetHz": 30000,
+              "value": -155
+            }
+          ],
+          "evidence": "Main-text phase-noise results"
+        },
+        {
+          "label": "Microcomb, author-scaled to 10 GHz",
+          "basis": "normalized_10ghz",
+          "carrierGHz": 10,
+          "points": [
+            {
+              "offsetHz": 10000,
+              "value": -145
+            },
+            {
+              "offsetHz": 30000,
+              "value": -146
+            },
+            {
+              "offsetHz": 1000000,
+              "value": -146
+            }
+          ],
+          "evidence": "Authors' 10 GHz-scaled comparison"
+        }
+      ],
+      "category": "OFD"
+    },
+    {
+      "id": "niu-2024-k-band-soliton",
+      "title": "Ultralow-Noise K-Band Soliton Microwave Oscillator Using Optical Frequency Division",
+      "authors": "Niu et al.",
+      "year": 2024,
+      "tags": [
+        "OFD",
+        "Kerr microcomb",
+        "K-band",
+        "Integrated"
+      ],
+      "sourceFile": "Niu 等 - 2024 - Ultralow-Noise K-Band Soliton Microwave Oscillator Using Optical Frequency Division.pdf",
+      "status": "verified",
+      "note": "Optical reference divided to the 26 GHz soliton repetition rate.",
+      "measurements": [
+        {
+          "label": "26 GHz output",
+          "basis": "raw",
+          "carrierGHz": 26,
+          "points": [
+            {
+              "offsetHz": 100,
+              "value": -101.3
+            },
+            {
+              "offsetHz": 10000,
+              "value": -132.4
+            }
+          ],
+          "evidence": "Abstract and conclusion"
+        }
+      ],
+      "category": "OFD"
+    },
+    {
+      "id": "sun-2024-integrated-ofd",
+      "title": "Integrated optical frequency division for microwave and mmWave generation",
+      "authors": "Sun et al.",
+      "year": 2024,
+      "tags": [
+        "OFD",
+        "Kerr microcomb",
+        "Integrated",
+        "SiN",
+        "mmWave"
+      ],
+      "sourceFile": "Sun 等 - 2024 - Integrated optical frequency division for microwave and mmWave generation.pdf",
+      "status": "verified",
+      "note": "Electrical 100 GHz output and the explicit 10 GHz-equivalent value are listed separately.",
+      "measurements": [
+        {
+          "label": "100 GHz output",
+          "basis": "raw",
+          "carrierGHz": 100,
+          "points": [
+            {
+              "offsetHz": 10000,
+              "value": -114
+            }
+          ],
+          "evidence": "Main text electrical-output result"
+        },
+        {
+          "label": "Author-scaled 10 GHz equivalent",
+          "basis": "normalized_10ghz",
+          "carrierGHz": 10,
+          "points": [
+            {
+              "offsetHz": 10000,
+              "value": -134
+            }
+          ],
+          "evidence": "Explicit equivalent value in main text"
+        }
+      ],
+      "category": "OFD"
+    },
+    {
+      "id": "sun-2025-kerr-ofd",
+      "title": "Microcavity Kerr optical frequency division with integrated SiN photonics",
+      "authors": "Sun et al.",
+      "year": 2025,
+      "tags": [
+        "OFD",
+        "Kerr microcomb",
+        "Integrated",
+        "SiN",
+        "mmWave"
+      ],
+      "sourceFile": "Sun 等 - 2025 - Microcavity Kerr optical frequency division with integrated SiN photonics.pdf",
+      "status": "verified",
+      "note": "Raw 109.5 GHz values and values explicitly normalized by the authors to 10 GHz are separate.",
+      "measurements": [
+        {
+          "label": "109.5 GHz output",
+          "basis": "raw",
+          "carrierGHz": 109.5,
+          "points": [
+            {
+              "offsetHz": 100,
+              "value": -77
+            },
+            {
+              "offsetHz": 10000,
+              "value": -121
+            }
+          ],
+          "evidence": "Main text phase-noise summary"
+        },
+        {
+          "label": "Author-scaled 10 GHz equivalent",
+          "basis": "normalized_10ghz",
+          "carrierGHz": 10,
+          "points": [
+            {
+              "offsetHz": 100,
+              "value": -98
+            },
+            {
+              "offsetHz": 10000,
+              "value": -142
+            }
+          ],
+          "evidence": "Explicit equivalent values in main text"
+        }
+      ],
+      "category": "OFD"
+    },
+    {
+      "id": "xie-2017-zeptosecond-ofd",
+      "title": "Photonic microwave signals with zeptosecond-level absolute timing noise",
+      "authors": "Xie et al.",
+      "year": 2017,
+      "tags": [
+        "OFD",
+        "Frequency comb",
+        "Ultra-stable laser",
+        "Bulk"
+      ],
+      "sourceFile": "Xie et al_2017_Photonic microwave signals with zeptosecond-level absolute timing noise.pdf",
+      "status": "verified",
+      "note": "The 12 GHz phase-noise result corresponds to a timing-noise floor below 41 zs/Hz^1/2.",
+      "measurements": [
+        {
+          "label": "12 GHz output",
+          "basis": "raw",
+          "carrierGHz": 12,
+          "points": [
+            {
+              "offsetHz": 10000,
+              "value": -173
+            }
+          ],
+          "evidence": "Opening summary and results text"
+        },
+        {
+          "id": "manual-raw-12",
+          "label": "手动补录 · 12 GHz 输出",
+          "basis": "raw",
+          "carrierGHz": 12,
+          "points": [
+            {
+              "offsetHz": 1,
+              "value": -105,
+              "manual": true,
+              "updatedAt": "2026-10-02T13:47:43.772Z"
+            }
+          ],
+          "evidence": "manual-local-entry",
+          "manual": true
+        }
+      ],
+      "category": "OFD",
+      "frequencyStability": [
+        {
+          "metric": "adev",
+          "averagingTimeSeconds": 1,
+          "value": 6.5e-16,
+          "unit": "fractional",
+          "method": "active",
+          "sourceNote": "",
+          "evidence": "manual-local-entry",
+          "updatedAt": "2026-10-02T13:47:43.772Z"
+        }
+      ],
+      "lastManualEditAt": "2026-10-02T13:47:43.772Z"
+    },
+    {
+      "id": "zhao-2026-optically-locked-pmo",
+      "title": "Optically locked low-noise photonic microwave oscillator",
+      "authors": "Zhao et al.",
+      "year": 2026,
+      "tags": [
+        "OFD",
+        "eOFD",
+        "Optical locking",
+        "TFLN",
+        "Compact",
+        "Dual-laser"
+      ],
+      "sourceFile": "Zhao 等 - 2026 - Optically locked low-noise photonic microwave oscillator.pdf",
+      "status": "verified",
+      "note": "Preprint. All optical components are reported in a 166 mL module.",
+      "measurements": [
+        {
+          "label": "10.4 GHz output",
+          "basis": "raw",
+          "carrierGHz": 10.4,
+          "points": [
+            {
+              "offsetHz": 10,
+              "value": -54
+            },
+            {
+              "offsetHz": 100,
+              "value": -77
+            },
+            {
+              "offsetHz": 1000,
+              "value": -108
+            },
+            {
+              "offsetHz": 10000,
+              "value": -141
+            },
+            {
+              "offsetHz": 100000,
+              "value": -146
+            },
+            {
+              "offsetHz": 1000000,
+              "value": -152
+            },
+            {
+              "offsetHz": 10000000,
+              "value": -162
+            }
+          ],
+          "evidence": "Abstract and main results text"
+        }
+      ],
+      "category": "OFD"
+    },
+    {
+      "id": "draft-2015-high-spectral-purity-kerr-frequency-comb-radio-frequency-photonic-oscillator",
+      "title": "High spectral purity Kerr frequency comb radio frequency photonic oscillator",
+      "authors": "待核对",
+      "year": 2015,
+      "category": "DIRECT_COMB_DETECTION",
+      "tags": [
+        "Kerr microcomb"
+      ],
+      "sourceFile": "Liang et al_2015_High spectral purity Kerr frequency comb radio frequency photonic oscillator.pdf",
+      "status": "verified",
+      "note": "自动发现的新文献；候选数值尚未人工核对，不参与排名。",
+      "measurements": [
+        {
+          "id": "manual-raw-9.9",
+          "label": "手动补录 · 9.9 GHz 输出",
+          "basis": "raw",
+          "carrierGHz": 9.9,
+          "points": [
+            {
+              "offsetHz": 10000,
+              "value": -125,
+              "manual": true,
+              "updatedAt": "2026-10-02T13:37:22.774Z"
+            }
+          ],
+          "evidence": "manual-local-entry",
+          "manual": true
+        }
+      ],
+      "autoCandidates": [],
+      "lastManualEditAt": "2026-10-02T13:37:22.774Z"
+    },
+    {
+      "id": "draft-2008-phase-noise-of-a-high-performance-oeo-and-an-ultra-low-noise-floor-cross-correla",
+      "title": "Phase noise of a high performance OEO and an ultra low noise floor cross-correlation microwave photo",
+      "authors": "待核对",
+      "year": 2008,
+      "category": "OEO_COEO",
+      "tags": [
+        "OEO"
+      ],
+      "sourceFile": "Eliyahu 等 - 2008 - Phase noise of a high performance OEO and an ultra low noise floor cross-correlation microwave photo.pdf",
+      "status": "verified",
+      "note": "自动发现的新文献；候选数值尚未人工核对，不参与排名。",
+      "measurements": [
+        {
+          "id": "manual-raw-10",
+          "label": "手动补录 · 10 GHz 输出",
+          "basis": "raw",
+          "carrierGHz": 10,
+          "points": [
+            {
+              "offsetHz": 10000,
+              "value": -160,
+              "manual": true,
+              "updatedAt": "2026-10-02T14:54:15.635Z"
+            }
+          ],
+          "evidence": "manual-local-entry",
+          "manual": true
+        }
+      ],
+      "autoCandidates": [],
+      "lastManualEditAt": "2026-10-02T14:54:15.635Z"
+    }
+  ],
+  "normalization": {
+    "referenceCarrierGHz": 10,
+    "formula": "L_10GHz = L_raw - 20*log10(carrierGHz/10)",
+    "rankingBasis": "All ranking values are normalized to a 10 GHz carrier. Author-reported normalized values take precedence."
+  },
+  "categories": [
+    {
+      "id": "OEO_COEO",
+      "label": "OEO / COEO"
+    },
+    {
+      "id": "OFD",
+      "label": "OFD"
+    },
+    {
+      "id": "OPTICAL_HETERODYNE",
+      "label": "光外差法"
+    },
+    {
+      "id": "DIRECT_COMB_DETECTION",
+      "label": "光梳直接探测"
+    }
+  ]
+}
+
