@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="匿名邮客">
+  <rect width="128" height="128" rx="32" fill="#f4e7d8"/>
+  <path d="M28 42h72v46H28z" fill="#b45f48"/>
+  <path d="m28 42 36 28 36-28M28 88l25-24m47 24L75 64" fill="none" stroke="#fbf8f3" stroke-width="5" stroke-linejoin="round"/>
+</svg>

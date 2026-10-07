@@ -1,0 +1,12 @@
+node_modules/
+public/
+db.json
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+
+# Keep unpublished drafts on this computer; the source repository is public.
+source/_drafts/
+

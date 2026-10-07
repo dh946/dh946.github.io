@@ -1,0 +1,55 @@
+# Site-owned Butterfly overrides. Keep theme upgrades separate from local choices.
+menu:
+  首页: / || fas fa-house
+  文章: /archives/ || fas fa-book-open
+  分类: /categories/ || fas fa-folder-open
+  动态: /moments/ || fas fa-stream
+  相册: /gallery/ || fas fa-images
+
+avatar:
+  img: /img/avatar.svg
+  effect: false
+
+favicon: /img/avatar.svg
+
+index_img:
+default_top_img:
+disable_top_img: false
+cover:
+  index_enable: false
+  aside_enable: false
+  archives_enable: false
+
+aside:
+  enable: true
+  card_author:
+    description: 个人创作 · 生活记录
+    button:
+      enable: false
+
+busuanzi:
+  site_uv: false
+  site_pv: false
+  page_pv: false
+
+subtitle:
+  enable: true
+  effect: false
+  source: false
+  sub:
+    - 把日常写下来，让生活留下回声。
+
+social:
+  fab fa-github: https://github.com/dh946 || GitHub || '#24292e'
+  fas fa-envelope: mailto:liuhui946@qq.com || Email || '#4a7dbe'
+
+readmode: true
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: 1
+
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/custom.css">
+
