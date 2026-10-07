@@ -1,8 +1,18 @@
 media:
-  input: source/img/uploads
-  output: /img/uploads
-  rename: random
-  categories: [image]
+  - name: images
+    label: 图片
+    input: source/img/uploads
+    output: /img/uploads
+    rename: random
+    categories: [image]
+    extensions: [jpg, jpeg, png, webp, avif, gif]
+  - name: audio
+    label: 音频
+    input: source/music/uploads
+    output: /music/uploads
+    rename: safe
+    categories: [audio]
+    extensions: [mp3, m4a, ogg, wav, aac]
 
 content:
   - name: moments
@@ -34,6 +44,9 @@ content:
             label: 图片
             type: image
             required: true
+            options:
+              media: images
+              path: source/img/uploads
           - name: alt
             label: 图片描述
             type: string
@@ -72,8 +85,114 @@ content:
         label: 标签
         type: string
         list: true
+      - name: cover
+        label: 封面
+        type: image
+        options:
+          media: images
+          path: source/img/uploads
       - name: body
         label: 正文
         type: rich-text
         options:
           format: markdown
+          media: images
+          path: source/img/uploads
+  - name: site
+    label: 网站设置
+    type: file
+    path: source/_data/site.yml
+    format: yaml
+    fields:
+      - name: home_background
+        label: 首页背景图
+        type: image
+        options:
+          media: images
+          path: source/img/uploads
+  - name: music
+    label: 音乐播放器
+    type: file
+    path: source/_data/music.yml
+    format: yaml
+    fields:
+      - name: enabled
+        label: 显示播放器
+        type: boolean
+      - name: autoplay
+        label: 尝试自动播放
+        type: boolean
+      - name: loop
+        label: 播放结束后
+        type: select
+        options:
+          values: [all, one, none]
+      - name: tracks
+        label: 歌单
+        type: object
+        list:
+          max: 100
+          collapsible: true
+        fields:
+          - name: title
+            label: 曲目名称
+            type: string
+            required: true
+          - name: artist
+            label: 作者或演唱者
+            type: string
+          - name: file
+            label: 音频文件
+            type: file
+            required: true
+            options:
+              media: audio
+              path: source/music/uploads
+              categories: [audio]
+              extensions: [mp3, m4a, ogg, wav, aac]
+          - name: cover
+            label: 封面图片
+            type: image
+            options:
+              media: images
+              path: source/img/uploads
+  - name: albums
+    label: 相册管理
+    type: file
+    path: source/_data/albums.yml
+    format: yaml
+    list: true
+    fields:
+      - name: title
+        label: 相册名称
+        type: string
+        required: true
+      - name: slug
+        label: 页面地址（英文或拼音）
+        type: string
+        required: true
+        pattern: "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      - name: date
+        label: 日期
+        type: date
+        required: true
+      - name: description
+        label: 相册简介
+        type: text
+      - name: cover
+        label: 封面照片
+        type: image
+        options:
+          media: images
+          path: source/img/uploads
+      - name: photos
+        label: 照片（可多选）
+        type: image
+        required: true
+        options:
+          media: images
+          path: source/img/uploads
+          multiple:
+            max: 24
+          unique: true
+

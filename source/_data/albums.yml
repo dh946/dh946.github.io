@@ -1,0 +1,10 @@
+- title: 海边散步的一天
+  slug: demo-album
+  date: 2026-10-07
+  description: 2026 年秋，在海边散步时留下的几张照片。你可以在手机后台新建相册，并一次选择多张照片。
+  cover: /img/demo-album/coast.svg
+  photos:
+    - /img/demo-album/coast.svg
+    - /img/demo-album/cafe.svg
+    - /img/demo-album/shore.svg
+
