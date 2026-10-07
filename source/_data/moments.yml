@@ -1,0 +1,10 @@
+# Pages CMS edits this public timeline. Dates include a timezone; newest entries render first.
+- date: '2026-10-07T12:00:00+08:00'
+  text: |
+    【测试动态】今天把博客的发布流程也整理了一下：文章适合写完整故事，相册用来收藏一组照片，动态则记录随手发生的小事。之后可以直接在网页编辑器里发文字、加照片。
+  images:
+    - url: /img/demo-album/coast.svg
+      alt: 测试配图：海边日落
+  tags: [测试, 博客记录]
+
+
