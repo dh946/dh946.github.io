@@ -44,6 +44,9 @@ social:
   fas fa-envelope: mailto:liuhui946@qq.com || Email || '#4a7dbe'
 
 readmode: true
+pjax:
+  enable: true
+  exclude: []
 darkmode:
   enable: true
   button: true
@@ -52,4 +55,9 @@ darkmode:
 inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css">
+  bottom:
+    - <div id="blog-music-player" class="blog-music-player" aria-label="音乐播放器"></div>
+    - <script src="/js/music-config.js" defer></script>
+    - <script src="/js/music-player.js" defer></script>
+
 

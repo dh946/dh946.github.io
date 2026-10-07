@@ -2,7 +2,7 @@ const fs = require('node:fs')
 const path = require('node:path')
 
 const publicDir = path.resolve(__dirname, '../public')
-const required = ['index.html', 'archives/index.html', 'categories/index.html', 'tags/index.html', 'moments/index.html', 'gallery/index.html', 'private/index.html', 'img/avatar.svg']
+const required = ['index.html', 'archives/index.html', 'categories/index.html', 'tags/index.html', 'moments/index.html', 'gallery/index.html', 'gallery/demo-album/index.html', 'private/index.html', 'img/avatar.svg', 'js/music-config.js', 'js/music-player.js']
 const removed = ['about', 'link', 'movies', 'cartoon', 'pan', 'video', 'fafa', 'in3', 'favorite', 'JLU', 'gzsh', 'sjbz', 'sjsy', 'zipai', ...Array.from({ length: 8 }, (_, i) => `fun${i + 1}`)]
 const errors = []
 for (const file of required) {
@@ -46,3 +46,4 @@ if (errors.length) {
 } else {
   console.log(`Site check passed: ${htmlFiles.length} HTML pages, required routes and local resources verified.`)
 }
+
