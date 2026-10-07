@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#f4b98d"/><stop offset=".58" stop-color="#f6d1a4"/><stop offset="1" stop-color="#f5dfbd"/></linearGradient>
+    <linearGradient id="sea" x2="0" y2="1"><stop stop-color="#5c9c9c"/><stop offset="1" stop-color="#315b69"/></linearGradient>
+    <linearGradient id="sand" x2="0" y2="1"><stop stop-color="#e5bd8a"/><stop offset="1" stop-color="#c98d68"/></linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sky)"/>
+  <circle cx="820" cy="320" r="112" fill="#fff0c8" opacity=".94"/>
+  <path d="M0 480 Q170 450 330 478 T660 465 T990 470 T1200 450 V760 H0Z" fill="url(#sea)"/>
+  <path d="M0 552 Q210 510 420 552 T840 540 T1200 526" fill="none" stroke="#f8d9aa" stroke-width="13" opacity=".7"/>
+  <path d="M0 635 Q160 590 350 628 T740 615 T1200 602" fill="none" stroke="#d4e1d1" stroke-width="7" opacity=".55"/>
+  <path d="M0 720 Q220 672 435 710 T850 694 T1200 702 V900 H0Z" fill="url(#sand)"/>
+  <path d="M760 730 Q900 686 1200 708" fill="none" stroke="#fff0d3" stroke-width="22" opacity=".7"/>
+</svg>
+
