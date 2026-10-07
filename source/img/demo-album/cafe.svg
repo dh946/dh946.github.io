@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="wall" x2="0" y2="1"><stop stop-color="#eee0ce"/><stop offset="1" stop-color="#c9b29d"/></linearGradient>
+    <linearGradient id="view" x2="0" y2="1"><stop stop-color="#efbd94"/><stop offset=".55" stop-color="#e9d1a5"/><stop offset=".56" stop-color="#6d9a97"/><stop offset="1" stop-color="#466a69"/></linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#wall)"/>
+  <rect x="460" y="72" width="620" height="570" rx="12" fill="#6a5144"/>
+  <rect x="482" y="94" width="576" height="526" fill="url(#view)"/>
+  <path d="M482 450 Q630 418 770 450 T1058 435 V620 H482Z" fill="#496b64" opacity=".65"/>
+  <path d="M755 94v526M482 360h576" stroke="#f5e8d5" stroke-width="17"/>
+  <rect x="0" y="650" width="1200" height="250" fill="#755342"/>
+  <path d="M0 674h1200" stroke="#a98267" stroke-width="18"/>
+  <ellipse cx="364" cy="672" rx="154" ry="30" fill="#f1e5d4"/>
+  <path d="M266 666q-9-116 97-116t95 116" fill="#efe7d9" stroke="#947760" stroke-width="12"/>
+  <ellipse cx="363" cy="554" rx="97" ry="24" fill="#705043"/>
+  <path d="M353 521q-28-47 9-79 22 45 3 80" fill="#f3e5ce" opacity=".9"/>
+</svg>
+
